@@ -1,0 +1,15 @@
+1. This script will remotely log in to a machine with ip address 192.168.1.25 and changes the root password to 'bland'.
+
+2.  Make sure first you had done this and then run the masterscript.sh
+
+  step1:  from your local machine:
+
+   ssh-copy-id root@192.168.1.25
+  
+   What this will do is: => It will tell the system to copy the local system's /root/.ssh/id_rsa.pub file to the remote system 192.168.1.25's /root/.ssh/authorized_keys file, thereby resulting in our system to become a "trusted system" for 192.168.1.25 and from then on it wont ask for password when we log in via ssh.
+
+3. Now, run sh masterscript.sh
+
+4. Now, test it!!
+
+
