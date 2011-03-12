@@ -8,7 +8,10 @@
   
    What this will do is: => It will tell the system to copy the local system's /root/.ssh/id_rsa.pub file to the remote system 192.168.1.25's /root/.ssh/authorized_keys file, thereby resulting in our system to become a "trusted system" for 192.168.1.25 and from then on it wont ask for password when we log in via ssh.
 
-3. Now, run sh masterscript.sh
+3. Now, run
+as follows:
+
+bash masterscript.sh >> /opt/Output 2>&1 
 
 4. Now, test it!!
 
